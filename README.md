@@ -1,2 +1,11 @@
-# yacc_team_round_2
-The round 2 repository of team YACC for the modules software engineering at the University of Pretoria
+# Yacc
+
+Round 2 repository of  the Yacc team for the Software Engieering modules at the University of Pretoria 2017.
+
+Team members:
+* Josef Alberts
+* Gregory Austin 14039712
+* Jocelyn Bondjobo 13232852
+* Claudio Da Silva 14205892
+* Thomas Honiball 15348751
+* Lesego Makaleng 15175716
