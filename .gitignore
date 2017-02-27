@@ -1,0 +1,9 @@
+# Relating to LaTeX
+
+*.pdf
+*.log
+*.aux
+*.bbl
+*.gz
+*.blg
+*.toc
