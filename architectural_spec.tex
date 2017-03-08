@@ -139,6 +139,53 @@
 		
 		\pagebreak
 		
+		\subsection{Performance Requirements}
+		
+		The NavUP system is expected to adhere to the following performance requirements:
+		
+			\begin{itemize}
+				
+				\item \textbf{Response Time}
+					\begin{itemize}
+						\item It is required that the response time be fast enough that the time taken to calculate the destination will not cancel out the time that it saves to use the calculated route, thus calculations should be as fast possible, estimated at under half a minute per calculation.
+						\item It is expected that the time between the server and any outside device it may be using is fast enough that the data transmitted still remains current.
+					\end{itemize}
+
+			\end{itemize}
+		
+			\begin{itemize}
+				
+				\item \textbf{Intuitive Design}
+				\begin{itemize}
+					\item It is expected that the design of the client side is easy to use, and can be figured out by the average person without the need for any help. Furthermore it is expected that the design remain appealing in doing so.
+					\item It is expected that the design for the server side is somewhat intuitive, and can be figured out with minimal effort if a new administrator is to take over. A steeper learning curve for the server may be expected than that of the client as the administrator is expected to be knowledgeable with the software.
+				\end{itemize}
+				
+			\end{itemize}
+		
+			\begin{itemize}
+	
+				\item \textbf{Reliability}
+				\begin{itemize}
+					\item It is expected that the data transferred from the server to the client is indeed accurate up to a degree of fault to be determined.
+					\item It is expected that the data held by the server is protected in case of a fault that may occur by methods such as backups.
+					\item It is expected that the system is protected against downtime in the case of a hardware failure on the server end.
+				\end{itemize}	
+	
+			\end{itemize}
+		
+			\begin{itemize}
+			
+				\item \textbf{Security}
+			
+				\begin{itemize}
+					\item It is expected that the transfer of location data is kept anonymous as far as possible so that personal location and travel routes are kept private.
+					\item It is expected that the transfer of a users detail is encrypted in a way that nobody except the user has access to important items such as email and password.
+					\item It is expected that access to the server and its details is restricted solely to those with proper access, via secure passwords and possibly additional authentication methods.
+				\end{itemize}	
+			
+			\end{itemize}				
+		
 		\subsection{Design Constraints}
 		
 		\subsection{Software System Attributes}
