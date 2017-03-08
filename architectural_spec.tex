@@ -142,8 +142,63 @@
 		\subsection{Design Constraints}
 		
 		\subsection{Software System Attributes}
+				The following software attributes can be classified as run-time qualities :
+		\begin{itemize}
+			\item \textbf {Performance}
+			\begin{enumerate}
+				\item \textbf{Description} \\
+				Application performance can be defined as the amount of work that can be accomplished by an application in question in a measured time interval. The time interval is normally measured in seconds, where the amount of work can be defined as the throughput, latency or data transmission time.
+				\begin{itemize}
+					\item \textbf{Throughput} \\
+					The number of requests and responses which can be processed by the system in a given time interval for example the time the application takes to locate its user on the map using wifi access points and gps.
+					\item \textbf{Latency and Data transmission time} \\
+					A time interval measured as the time it takes to service a request such as to find the best route or path to guide the user to a certain destination. 
+				\end{itemize}
 	
-	\pagebreak
+				The aim for this system, is to increase the throughput and decrease the latency. As the developer has no control over the network medium used, s/he must aim for a minimal request and response payload as to decrease the data transmission time.
+				\item \textbf{Justification} \\
+				Our aim for this system is to increase throughput, decrease latency and data transmission time. This will ensure we have a system that is responsive at all times, including peak times and delivers an excellent user experience.
+				\item \textbf{Requirements}
+				\begin{itemize}
+					\item Function calls must be timed and benchmarked and this data should be logged.
+					\item Network responses should be cached on server side to lighten the load on the device.
+				\end{itemize}
+			\end{enumerate}
+			\item \textbf {Reliability}
+			\begin{enumerate}
+				\item \textbf{Description} \\
+				The designed system needs to be accessible from both inside and outside buildinds at the University of Pretoria campuses as well as from other networks, especially on other campuses. The system should be reliable in its accessibility.
+				\item \textbf{Justification} \\ 
+				The system must not be unreliable in that it crashes under large workloads for example when many users are actually using the application and some users get denied service during work critical times when workloads are high. This causes a detriment in user productivity. To ensure that the system can be used confidently as a tool to increase productivity and ease the work process, the development aim must be for the system to be as reliable and accessible as possible.
+				\item \textbf{Requirements}
+				\begin{itemize}
+					\item To enable access of data from the Android or IOS app even when offline such as preferences, events, etc..
+				\end{itemize}
+			\end{enumerate}
+			\item \textbf {Scalability}
+			\begin{enumerate}
+				\item \textbf{Description} \\
+				Scalability refers to the application in question's ability to handle an above normal workload for example when many users are currently using the app as it must provide and visualise information related to pedestrian traffic on campus for example in the form of heat maps of user locations.
+				\item \textbf{Justification} \\
+				The system needs Scalability because it needs to support many users at the same time.
+				\item \textbf{Requirements}
+				\begin{itemize}
+					\item The system should be able to handle the growing amount of data or number of users using the app at the same time.
+				\end{itemize}
+			\end{enumerate}
+		\item \textbf {Security}
+		\begin{enumerate}
+			\item \textbf{Description} \\
+			Security in application software refers to authentication, authorization, data security and accounting. Authentication refers to the systems' ability to provide a way of identifying a user, normally with our system it will identify its users from the device name.
+			\item \textbf{Justification} \\
+			Security is a important aspect of any software product. In terms of information security, we are concerned about integrity, availability, confidentiality and non-repudiation in that order. 
+
+			\item \textbf{Requirements}
+			\begin{itemize}
+				\item System should be resistant hacking as some people could use it to steal some personal information on the device about the user.
+			\end{itemize}
+		\end{enumerate}
+	\end{itemize}
 	
 	\section{Module Design}
 	
