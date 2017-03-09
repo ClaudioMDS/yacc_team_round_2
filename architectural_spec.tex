@@ -312,17 +312,24 @@
 			\begin{figure}[H]
 			
 				\centering{\includegraphics[width=1.0\linewidth]{./images/state/notifications_state.jpg}}
-				\caption{State diagram for the notifications module}
+				\caption{State diagram for the Notifications module}
 			
 			\end{figure}
 	
 		\subsection{Navigation Subsystem}
+		
+			\begin{figure}[H]
+				
+				\centering{\includegraphics[width=1.0\linewidth]{./images/state/navigation_state.jpg}}
+				\caption{State diagram for the Navigation module}
+				
+			\end{figure}
 	
 		\subsection{Events Subsystem}
 		
 			\begin{figure}[H]
 				
-				\centering{\includegraphics[width=1.0\linewidth]{./images/state/events_state.jpg}}
+				\centering{\includegraphics[width=1.05\linewidth]{./images/state/events_state.jpg}}
 				\caption{State diagram for the Events module}
 				
 			\end{figure}
@@ -332,70 +339,104 @@
 	\section{System assessment}	
 	
 		\subsection{Technology choices}
-		\subsubsection{Android clients}
-		\begin{enumerate}
+		
+		\subsubsection{Android client}
+		
+			\begin{enumerate}
+				 \item \textbf{Programming Languages}
+				\begin{itemize}
+					\item Java
+					\item eXtensible Markup Language (XML)
+				\end{itemize}
+			\item \textbf{Frameworks}
+				\begin{itemize}
+					\item Android Studio
+				\end{itemize}
+			\item \textbf{Libraries}
+				\begin{itemize}
+					\item Android Butterknife
+				\end{itemize}
+			\item \textbf{Database System} \\ \\ 
+			Couchbase Mobile which consists of:
+				\begin{itemize}
+	 				\item Couchbase Lite
+					\item Couchbase Sync Gateway
+					\item Couchbase Server
+				\end{itemize}
+				\item \textbf{Operating System}
+			\begin{itemize}
+	 				\item Android 4.0. Devices and upwards
+				\end{itemize}
+			\item \textbf{Dependency Management and Build Tools}
+				\begin{itemize}
+					\item Gradle
+				\end{itemize}
+			\end{enumerate}
+	
+		\subsubsection{IOS client}
+		
+			\begin{enumerate}
 			 \item \textbf{Programming Languages}
-			\begin{itemize}
-				\item Java
-				\item eXtensible Markup Language (XML)
-			\end{itemize}
-		\item \textbf{Frameworks}
-			\begin{itemize}
-				\item Android Studio
-			\end{itemize}
-		\item \textbf{Libraries}
-			\begin{itemize}
-				\item Android Butterknife
-			\end{itemize}
-		\item \textbf{Database System} \\ \\ 
-		Couchbase Mobile which consists of:
-			\begin{itemize}
- 				\item Couchbase Lite
-				\item Couchbase Sync Gateway
-				\item Couchbase Server
-			\end{itemize}
+				\begin{itemize}
+					\item Objective C
+				\end{itemize}
+			\item \textbf{Frameworks}
+				\begin{itemize}
+					\item Apple's Swift
+				\end{itemize}
+			\item \textbf{Libraries}
+				\begin{itemize}
+					\item CocoaPods
+					\item Carthage
+				\end{itemize}
+			\item \textbf{Database System}
+				\begin{itemize}
+	 				\item AFNetworking
+					\item JSONModel
+					\item MagicalRecord
+					\item SDWebImage
+					\item ReactiveCocoa
+				\end{itemize}
 			\item \textbf{Operating System}
-		\begin{itemize}
- 				\item Android 4.0. Devices and upwards
-			\end{itemize}
-		\item \textbf{Dependency Management and Build Tools}
-			\begin{itemize}
-				\item Gradle
-			\end{itemize}
-		\end{enumerate}
+				\begin{itemize}
+	 				\item IOS devices
+				\end{itemize}
+			\item \textbf{Dependency Management and Build Tools}
+				\begin{itemize}
+					\item Swift Package Manager (SPM)
+				\end{itemize}
+			\end{enumerate}
 	
-		\subsubsection{IOS Clients}
-		\begin{enumerate}
-		 \item \textbf{Programming Languages}
-			\begin{itemize}
-				\item Objective C
-			\end{itemize}
-		\item \textbf{Frameworks}
-			\begin{itemize}
-				\item Apple's Swift
-			\end{itemize}
-		\item \textbf{Libraries}
-			\begin{itemize}
-				\item CocoaPods
-				\item Carthage
-			\end{itemize}
-		\item \textbf{Database System}
-			\begin{itemize}
- 				\item AFNetworking
-				\item JSONModel
-				\item MagicalRecord
-				\item SDWebImage
-				\item ReactiveCocoa
-			\end{itemize}
-		\item \textbf{Operating System}
-			\begin{itemize}
- 				\item IOS devices
-			\end{itemize}
-		\item \textbf{Dependency Management and Build Tools}
-			\begin{itemize}
-				\item Swift Package Manager (SPM)
-			\end{itemize}
-		\end{enumerate}
-	
-
+		\subsubsection{Server side}
+		
+				\begin{enumerate}
+				\item \textbf{Programming Languages}
+				\begin{itemize}
+					\item
+				\end{itemize}
+				\item \textbf{Frameworks}
+				\begin{itemize}
+					\item 
+				\end{itemize}
+				\item \textbf{Libraries}
+				\begin{itemize}
+					\item 
+				\end{itemize}
+				\item \textbf{Database System}
+				\begin{itemize}
+					\item 
+				\end{itemize}
+				\item \textbf{Operating System}
+				\begin{itemize}
+					\item Linux (Preferably)
+					\item Windows
+					\item MacOS (Possibly)
+				\end{itemize}
+				\item \textbf{Dependency Management and Build Tools}
+				\begin{itemize}
+					\item 
+				\end{itemize}
+			\end{enumerate}
+		
+			
 \end{document}
