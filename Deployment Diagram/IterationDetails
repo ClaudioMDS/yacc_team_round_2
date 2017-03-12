@@ -1,3 +1,4 @@
 Iterations:
 1. First upload, created basic structure of the system
 2. Inserted basic DBs and Infrastructure systems
+3. Improved DB detail and internal structure, separated DBs from relevant devices, providing an internal link
