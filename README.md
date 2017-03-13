@@ -14,9 +14,11 @@ Round 2 repository of  the Yacc team for the Software Engineering modules at the
 ## Directory Structure:
 
 **images**
--- Used for storing diagrams to be used in the document
+-- Used for storing diagrams to be used in the document 
+
 **planning**
--- Used to pre-plan the image locations and the design of the deployment diagram
+-- Used to pre-plan the image locations and the design of the deployment diagram 
+
 **xml**
 -- XML files that may be edited on [Draw.io](https://www.draw.io) to create the diagrams
 
