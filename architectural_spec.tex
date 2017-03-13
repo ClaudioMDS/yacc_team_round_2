@@ -681,6 +681,42 @@
 					\end{itemize}
 				\end{itemize}
 			\end{enumerate}
+	
+		\pagebreak
 		
+		\subsection{Architectural Design Patterns}
+		
+		These are the high level structural patterns, used in the design of the system as a whole:
+		
+			\subsubsection{Layered architecture}
+			
+			By adding multiple layers, we create a separation of concerns. This makes the system more de-coupled. This allows for easier mocking of the different components such as  the cameras, server, iOS, Android and such. It also makes the system highly pluggable, allowing for addition of new hardware features, clients, and even moving parts of the system around such as to a new university.
+			
+			\subsubsection{Master-Slave Pattern}
+		
+			This pattern can be used to distribute workload, allowing for different calculations to be handled at the same time. By this separation of data, we create a form of scalability, allowing addition of new nodes to handle an excess amount of requests. We also create a fault tolerance in the event one part of a system goes down, another can still handle the remaining workload.
+			
+			\subsubsection{MVC}
+			
+			Through use of the model, view, control pattern, we gain an extra layer of reliability, re-usability and testability. By separating the modules, it makes it easier for us to mock out certain sections and work on the ones individually in teams, spitting the design and the back-end for a faster work flow. \\
+			
+			The following patterns are those design patterns used in the individual modules:
+			
+			\subsubsection{Minor design patterns}
+				
+				\begin{itemize}
+					\item \textbf{Singleton}
+						\begin{itemize}
+							\item Used in events to ensure singular creation of objects
+						\end{itemize}
+					\item \textbf{Factory}
+					\begin{itemize}
+						\item Used in events to create multiple different kinds of events from a base event, thus allowing easier production of event objects.
+					\end{itemize}
+					\item \textbf{Strategy}
+					\begin{itemize}
+						\item Used in notifications in order to swap out the type as needed.
+					\end{itemize}
+				\end{itemize}
 			
 \end{document}
