@@ -31,4 +31,4 @@ The document base is called architectural_spec.tex and requires LaTeX to build, 
 *rotating
 *geometry
 
-As each LaTeX environment is different, no method shall be given to build the pdf, but a built version is available off Google Drive should any issues occur.
+As each LaTeX environment is different, no method shall be given to build the pdf, but a [built](https://drive.google.com/file/d/0B6kGJfKtqmQqWEpKbzBmQm41Vkk/view?usp=sharing) version is available off Google Drive should any issues occur.
