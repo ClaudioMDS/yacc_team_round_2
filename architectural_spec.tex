@@ -3,6 +3,7 @@
 
 \usepackage{graphicx}
 \usepackage{float}
+\usepackage{rotating}
 
 \begin{document}
 	
@@ -306,6 +307,13 @@
 				\caption{Class diagram for the GIS module}
 				
 			\end{figure}
+		
+			\begin{figure}[H]
+				
+				\centering{\includegraphics[width=\textwidth, height=!]{"./images/sequence/GIS Sequence Diagram".png}}
+				\caption{Sequence diagram for the GIS module}
+				
+			\end{figure}	
 			
 			\begin{figure}[H]
 				
@@ -314,12 +322,21 @@
 				
 			\end{figure}
 
+		\pagebreak
+		
 		\subsection{Notification Subsystem}
 			
 			\begin{figure}[H]
 				
 				\centering{\includegraphics[width=\textwidth, height=!]{./images/class/NotificationsClassDiagram.png}}
 				\caption{Class diagram for the Notification module}
+				
+			\end{figure}
+		
+			\begin{figure}[H]
+				
+				\centering{\includegraphics[width=\textwidth, height=!]{"./images/sequence/Notification Sequence Diagram".png}}
+				\caption{Sequence diagram for the Notification module}
 				
 			\end{figure}
 			
@@ -329,13 +346,15 @@
 				\caption{State diagram for the Notifications module}
 			
 			\end{figure}
-			
-		\subsubsection{Notification Use Cases}
+		
 			\begin{figure}[H]
-				\centering{\includegraphics[width=\textwidth, height=!]{./Use Cases/package notification.png}}
-				\centering{\includegraphics[width=\textwidth, height=!]{./Use Cases/eventNotification.png}}
-				\caption{Use cases for Notification}
+				
+				\centering{\includegraphics[width=\textwidth, height=!]{./images/use_case/Package notification.png}}
+				\caption{Use case package notification for the Events module}
+				
 			\end{figure}
+			
+		\pagebreak
 	
 		\subsection{Navigation Subsystem}
 		
@@ -343,6 +362,13 @@
 				
 				\centering{\includegraphics[width=\textwidth, height=!]{./images/class/NavigationClassDiagram.png}}
 				\caption{Class diagram for the Navigation module}
+				
+			\end{figure}
+		
+			\begin{figure}[H]
+				
+				\centering{\includegraphics[width=\textwidth, height=!]{"./images/sequence/Navigation Sequence Diagram".png}}
+				\caption{Sequence diagram for the Navigation module}
 				
 			\end{figure}		
 			
@@ -352,7 +378,10 @@
 				\caption{State diagram for the Navigation module}
 				
 			\end{figure}
-	
+		
+		
+		\pagebreak
+		
 		\subsection{Events Subsystem}
 		
 			\begin{figure}[H]
@@ -364,30 +393,72 @@
 		
 			\begin{figure}[H]
 				
+				\centering{\includegraphics[width=\textwidth, height=!]{"./images/sequence/Events sequence diagram".png}}
+				\caption{Sequence diagram for the Events module}
+				
+			\end{figure}
+		
+			\begin{figure}[H]
+				
 				\centering{\includegraphics[width=\textwidth, height=!]{./images/state/events_state.jpg}}
 				\caption{State diagram for the Events module}
 				
 			\end{figure}
-			
-		\subsubsection{Create Event Use Cases}
+		
 			\begin{figure}[H]
-				\centering{\includegraphics[width=\textwidth, height=!]{./Use Cases/package createEvent.png}}
-				\centering{\includegraphics[width=\textwidth, height=!]{./Use Cases/createEvent.png}}
-				\caption{Use cases for Create Event}
+				
+				\centering{\includegraphics[width=\textwidth, height=!]{./images/use_case/Package editEvent.png}}
+				\caption{Use case package editEvent for the Events module}
+				
+			\end{figure}
+		
+			\begin{figure}[H]
+				
+				\centering{\includegraphics[width=\textwidth, height=!]{./images/use_case/package createEvent.png}}
+				\caption{Use case package createEvent for the Events module}
+				
+			\end{figure}
+		
+			\begin{figure}[H]
+				
+				\centering{\includegraphics[width=\textwidth, height=!]{./images/use_case/createEvent.png}}
+				\caption{Use case createEvent for the Events module}
+				
+			\end{figure}
+		
+			\begin{figure}[H]
+				
+				\centering{\includegraphics[width=\textwidth, height=!]{./images/use_case/editEvent.png}}
+				\caption{Use case editEvent for the Events module}
+				
+			\end{figure}
+		
+			\begin{figure}[H]
+				
+				\centering{\includegraphics[width=\textwidth, height=!]{./images/use_case/eventNotification.png}}
+				\caption{Use case eventNotification for the Events module}
+				
 			\end{figure}
 			
-		\subsubsection{Edit Event Use Cases}
-			\begin{figure}[H]
-				\centering{\includegraphics[width=\textwidth, height=!]{./Use Cases/package editEvent.png}}
-				\centering{\includegraphics[width=\textwidth, height=!]{./Use Cases/editEvent.png}}
-				\caption{Use cases for Create Event}
-			\end{figure}
+		\pagebreak
+		
+		\subsection{Deployment Diagram}
+		
+		A larger version of the given diagram is available under images/deployment on the GitHub repository:
+		
+		\begin{sidewaysfigure}[]
+			\centering
+			\includegraphics[width=1.15\textwidth]{"./images/deployment/deployment_diagram".jpg}
+			\caption{Deployment Diagram for the NavUP system}
+		\end{sidewaysfigure}
 	
 	\pagebreak
 	
 	\section{System assessment}	
 	
 		\subsection{Technology choices}
+		
+		Where assumed needed, an explanation is given for the technology chosen:
 		
 		\subsubsection{Android client}
 		
@@ -399,94 +470,215 @@
 				\end{itemize}
 			\item \textbf{Frameworks}
 				\begin{itemize}
-					\item Android Studio
+					\item N/A
+					\begin{itemize}
+						\item Android Studio is the industry standard, and thus should suffice without the need for external frameworks.
+					\end{itemize}
 				\end{itemize}
 			\item \textbf{Libraries}
 				\begin{itemize}
 					\item Android Butterknife
+					\begin{itemize}
+						\item A great tool for binding views, allowing for a sort of dependency injection to occur.
+					\end{itemize}
+					\item Retrofit
+					\begin{itemize}
+						\item A type-safe REST client for Android which intelligently maps an API into a client interface using annotations.
+					\end{itemize}
 				\end{itemize}
-			\item \textbf{Database System} \\ \\ 
+			\item \textbf{Database System}
+			\begin{itemize}
+				\item Native Cache
+				\begin{itemize}
+					\item Minimal storage should occur, thus native cache should be enough.
+				\end{itemize}
+			\end{itemize}
 			Couchbase Mobile which consists of:
 				\begin{itemize}
 	 				\item Couchbase Lite
 					\item Couchbase Sync Gateway
 					\item Couchbase Server
+					\begin{itemize}
+						\item Well integrated into the Android system if further storage should be necessary
+					\end{itemize}
 				\end{itemize}
 				\item \textbf{Operating System}
 			\begin{itemize}
 	 				\item Android 4.0 Devices and upwards
+	 				\begin{itemize}
+	 					\item This targets a majority number of modern mobile phones, allowing for a wider user base while not having to reduce on system quality.
+	 				\end{itemize}
 				\end{itemize}
 			\item \textbf{Dependency Management and Build Tools}
 				\begin{itemize}
 					\item Gradle
+					\begin{itemize}
+						\item An Android industry standard built into Android studio, it integrates well with Maven, and thus with the server side artifacts.
+					\end{itemize}
 				\end{itemize}
 			\end{enumerate}
 	
+		\pagebreak
+		
 		\subsubsection{IOS client}
 		
 			\begin{enumerate}
 			 \item \textbf{Programming Languages}
 				\begin{itemize}
 					\item Objective C
+					\item Apple's Swift
+					\begin{itemize}
+						\item Widely supported by apple, integrates well with Objective C code and is created to work with the Cocoa and Cocoa Touch frameworks.
+					\end{itemize}
 				\end{itemize}
 			\item \textbf{Frameworks}
 				\begin{itemize}
-					\item Apple's Swift
+					\item Cocoa
+					\item Cocoa Touch
+					\begin{itemize}
+						\item Cocoa is Apple's native object-oriented application programming interface (API) for their operating system
+					\end{itemize}
 				\end{itemize}
 			\item \textbf{Libraries}
 				\begin{itemize}
-					\item CocoaPods
-					\item Carthage
+					\item SSToolkit
+					\begin{itemize}
+						\item A great set of tools for UI design including maps and other such objects needed for our system.
+					\end{itemize}
 				\end{itemize}
 			\item \textbf{Database System}
 				\begin{itemize}
-	 				\item AFNetworking
-					\item JSONModel
-					\item MagicalRecord
-					\item SDWebImage
-					\item ReactiveCocoa
+					\item Native Cache
+					\begin{itemize}
+						\item Minimal storage should occur, thus native cache should be enough.
+					\end{itemize}
+	 				\item SQLite (If needed)
 				\end{itemize}
 			\item \textbf{Operating System}
 				\begin{itemize}
-	 				\item IOS devices
+	 				\item iOS
 				\end{itemize}
 			\item \textbf{Dependency Management and Build Tools}
 				\begin{itemize}
 					\item Swift Package Manager (SPM)
+					\begin{itemize}
+						\item The industry standard package manager with regards to Swift, integrates well with Maven artifacts from the server side.
+					\end{itemize}
+				\item Carthage
+				\begin{itemize}
+					\item A more flexible means of framework management as opposed to cocoapods which is simpler but offers less user input.
+				\end{itemize}
 				\end{itemize}
 			\end{enumerate}
+		
+		\pagebreak
+				
+		\subsubsection{Web client}
+		
+		\begin{enumerate}
+			\item \textbf{Programming Languages}
+			\begin{itemize}
+				\item HTML 5
+				\item CSS
+				\item Javascript
+			\end{itemize}
+			\item \textbf{Frameworks}
+			\begin{itemize}
+				\item AngularJS2
+				\begin{itemize}
+					\item The original Angular was very well received and supported, but with the release of version 2, it has more compatibility and guarantee of future support. It is a great framework for providing fast and reliable web content that changes fairly quickly.
+				\end{itemize}
+			\end{itemize}
+			\item \textbf{Libraries}
+			\begin{itemize}
+				\item Bootstrap for CSS/SASS
+				\begin{itemize}
+					\item Used in order to enhance cross-device functionality among the web client, as well as follow web standards.
+				\end{itemize}
+				\item Jquery
+				\begin{itemize}
+					\item A Javascript framework allowing for better manipulation of javascript, thus used as a standard in most frameworks
+				\end{itemize}
+				\item Typescript
+				\begin{itemize}
+					\item A required library for the new Angular, it ensures more rigorous typing for the javascript language.
+				\end{itemize}
+			\end{itemize}
+			\item \textbf{Database System}
+			\begin{itemize}
+				\item Native Cache
+				\begin{itemize}
+					\item Minimal storage should occur, thus native browser cache should be sufficient
+				\end{itemize}
+			\end{itemize}
+			\item \textbf{Browser}
+			\begin{itemize}
+				\item Chrome, Firefox, Edge (Must)
+				\item Safari (Nice to have)
+				\item Other HTML 5 compliant browsers (If possible)
+			\end{itemize}
+			\item \textbf{Dependency Management and Build Tools}
+			\begin{itemize}
+				\item Bower
+				\begin{itemize}
+					\item A standard across most web-frameworks today, used to handle the dependencies involved with most web frameworks.
+				\end{itemize}
+			\end{itemize}
+		\end{enumerate}
 	
+		\pagebreak
+		
 		\subsubsection{Server side}
 		
 				\begin{enumerate}
 				\item \textbf{Programming Languages}
 				\begin{itemize}
-					\item HMTL 5
-					\item CSS 3
-					\item Javascript
-					\item jQuery
+					\item Java
+						\begin{itemize}
+							\item A solid stable language that runs cross-platform efficiently and by use of a language available on most computers.
+						\end{itemize}
 				\end{itemize}
 				\item \textbf{Frameworks}
 				\begin{itemize}
-					\item N/A
+					\item JavaEE
+					\begin{itemize}
+						\item A stable and reliable back-end with years of support and many tools to aid it including the latest WildFly installment, perfect for multi-platform projects as opposed to a Node.js better suited to web only development.
+					\end{itemize}
+					\item Spring
+					\begin{itemize}
+						\item While JavaEE does have other methods of performing dependency injection, Spring is a very widely used and well supported framework that runs extremely well on top of a JavaEE environment 
+					\end{itemize}
 				\end{itemize}
 				\item \textbf{Libraries}
 				\begin{itemize}
-					\item Bootstrap as library for CSS
+					\item JPA
+					\begin{itemize}
+						\item Will be used to interact with the database from within the JavaEE environment, and has great support for postgreSQL.
+					\end{itemize}
 				\end{itemize}
 				\item \textbf{Database System}
 				\begin{itemize}
-					\item mySQL
+					\item PostgreSQL
+					\begin{itemize}
+						\item Not too lightweight as to have the 2GB limitation of mySQL, but still relatively light compared to most, it is perfect for storing information that has relationships such as that of our system.
+					\end{itemize}
 				\end{itemize}
 				\item \textbf{Operating System}
 				\begin{itemize}
-					\item Linux (Preferably)
-					\item Windows
-					\item MacOS (Possibly)
+					\item Linux (Must)
+					\item Windows (Nice to have)
+					\item MacOS (If possible)
 				\end{itemize}
 				\item \textbf{Dependency Management and Build Tools}
 				\begin{itemize}
-					\item N/A
+					\item Maven
+					\begin{itemize}
+						\item A build tool well integrated into the JavaEE architecture as well as others such as Gradle, Maven will take care of most dependency necessities and allow easy artifact deployment and use over to the mobile clients. 
+					\end{itemize}
+					\item Travis CI
+					\begin{itemize}
+						\item As the code will be available on a repository where many people will contribute, Travis will ensure that all pushed code is building and working at all points in time, thus allowing for fixing of broken code.
+					\end{itemize}
 				\end{itemize}
 			\end{enumerate}
 		
